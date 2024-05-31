@@ -1,1 +1,271 @@
-<!--ACA PONER EL INDEX QUE UNA TODOS LOS ARCHIVOS Y NO OLVIDAR PONER EN LA PARTE SUPERIOR LOS NOMBRES DE TODOS-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Metadatos-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Equipo 3 Proyecto Final </title>
+        <!--Vincular a CSS-->
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="menu container">
+                <a href="#" class="logo">logo</a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Imagen menu.png-->
+                    <img src="./Assets/menu.png" class="menu-icono" alt="menu">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <!--Aqui va la lista y el carrito-->
+                    <ul>
+                        <li class="submenu">
+                            <!--Imagen carrito car.svg-->
+                            <img src="./Assets/car.svg" id="img-carrito"  alt="Carrito de compras">
+                            <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!--Se llena con JS-->
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!--Div Menu-->
+
+            <div class="header-content containter">
+                <div class="header-txt">
+                    <span>Ofertas</span>
+                    <h1>Sueteres</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam voluptatibus similique consequuntur fugit minus debitis incidunt veniam, ut sapiente, quae odio repudiandae nihil corporis quasi dignissimos itaque? Consectetur, excepturi.
+                    </p>
+                    <a href="#" class="btn-1">Informacion</a>
+                </div>
+                <div class="header-txt">
+                    <span>Ofertas</span>
+                    <h1>Amigurumis</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam voluptatibus similique consequuntur fugit minus debitis incidunt veniam, ut sapiente, quae odio repudiandae nihil corporis quasi dignissimos itaque? Consectetur, excepturi.
+                    </p>
+                    <a href="#" class="btn-1">Informacion</a>
+                </div>
+                <div class="header-img">
+                    <!--Para el header right.png-->    
+                    <img src="./Assets/SueterEjem.jpg" alt="sueteres">
+                </div>
+            </div> <!--Div Header-Content-->
+
+        </header>
+        <!--Seccion nueva INFORMACION-->
+         <section class="information container">
+
+            <div class="information-content">
+
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i1.svg" alt="">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        voluptatum blanditis repellendus
+                    </p>
+                </div>
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i2.svg" alt="">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        voluptatum blanditis repellendus
+                    </p>
+                </div>
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i3.svg" alt="">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        voluptatum blanditis repellendus
+                    </p>
+                </div>                
+            </div>
+
+         </section>   
+
+         <!--Seccion nueva OFERTAS-->
+         <section class="oferts container">
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/AmigurEjem.jpg" alt="">
+                <h3>Oferta</h3>
+                <p>Premium</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/AmigurEjem.jpg" alt="">
+                <h3>Oferta1</h3>
+                <p>Premium</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/AmigurEjem.jpg" alt="">
+                <h3>Oferta</h3>
+                <p>Premium</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/AmigurEjem.jpg" alt="">
+                <h3>Oferta1</h3>
+                <p>Premium</p>
+            </div>
+         </section>
+
+         <!--Contenido principal
+                Productos para agregar al carrito
+            -->
+
+         <main class="products container" id="lista-1">
+            <h2>Productos destacados</h2>
+            <!--Lista con todos los productos-->
+            <div class="products-content">
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$150.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$500.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$350.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$350.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$150.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$500.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$350.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Producto</h3>
+                        <p class="precio">$350.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                    </div>
+                </div>
+            </div>
+         </main>
+
+         <!--Seccion Nueva-->
+
+         <section class="service">
+            <div class="service-1">
+                <!--1.png-->
+                <img class="store" src="./Assets/AmigurEjem.jpg" alt="">
+            </div>
+            <div class="service-2">
+                <!--1.png-->
+                <img class="store" src="./Assets/SueterEjem.jpg" alt="">
+            </div>
+          
+         </section> <!---->
+
+         <!--Seccion nueva-->
+         <section class="contact container">
+            <form>  
+                <input type="email" placeholder="correo">
+                <input type="submit" class="btn-3">
+            </form>
+
+         </section>
+
+         <!--Seccion nueva-->
+         <footer class="footer">
+            <div class="footer-content container">
+                <div class="link">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                </div>
+            </div>
+         </footer>
+
+        <!--Vincular a JS-->
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
