@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Metadatos-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Equipo 3 Proyecto Final </title>
+        <!--Vincular a CSS-->
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="menu container">
+                <a href="#" class="logo">logo</a>
+                <img src="./Assets/logo.jpg" height="80px" width="150px">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <!--Imagen menu.png-->
+                    <img src="./Assets/menu.png" class="menu-icono" alt="menu">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="http://localhost/Eq99/ListaArticulos.php">Ver Productos</a></li>
+                        <li><a href="AgregaProducto.html">Vende un producto</a></li>
+                        <li><a href="#enterprise">Quienes somos</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <!--Aqui va la lista y el carrito-->
+                    <ul>
+                        <li class="submenu">
+                            <!--Imagen carrito car.svg-->
+                            <img src="./Assets/car.svg" id="img-carrito"  alt="Carrito de compras">
+                            <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!--Se llena con JS-->
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!--Div Menu-->
+
+            <div class="header-content containter">
+                <div class="header-txt">
+                    <span>Ofertas</span>
+                    <h1>Suéteres</h1>
+                    <p>
+                        Ordena un suéter tejido a mano y hecho a la medida, completamente personalizable desde diseño hasta material 
+                    </p>
+                    <a href="http://localhost/Eq99/ListaArticulos.php" class="btn-1">Informacion</a>
+                </div>
+               
+                <div class="header-txt">
+                    <span>Ofertas</span>
+                    <h1>Bolsas</h1>
+                    <p>
+                        Para escula, el trabajo o el diario organiza tu espacio con un toque de color
+                    </p>
+                    <a href="http://localhost/Eq99/ListaArticulos.php" class="btn-1">Informacion</a>
+                </div>
+
+                <div class="header-txt">
+                    <span>Ofertas</span>
+                    <h1>Amigurumis</h1>
+                    <p>
+                        Son muñecos tejidos tejidos en hilo de lana o algodón, nuestros diseños abarcan animales, humanos y plantas pide el tuyo ahora
+                    </p>
+                    <a href="http://localhost/Eq99/ListaArticulos.php" class="btn-1">Informacion</a>
+                </div>
+
+                <div class="header-img">
+                    <!--Para el header right.png-->    
+                    <img src="./Assets/SueterEjem.jpg" alt="sueteres">
+                </div>
+            </div> <!--Div Header-Content-->
+
+        </header>
+        <!--Seccion nueva INFORMACION-->
+         <section class="information container">
+
+            <div class="information-content">
+
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i1.svg" alt="">
+                    <h3>Siempre disponible</h3>
+                    <p>
+                        ¿Tienes dudas? Contáctanos
+                    </p>
+                </div>
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i2.svg" alt="">
+                    <h3>Facilidades de pago</h3>
+                    <p>
+                        Aceptamos tarjeta, transferencia y efectivo
+                    </p>
+                </div>
+                <div class="information-1">
+                    <!--i1.svg-->
+                    <img src="./Assets/i3.svg" alt="">
+                    <h3>Envios rápidos</h3>
+                    <p>
+                        Hacemos envíos a toda la República Mexicana
+                    </p>
+                </div>                
+            </div>
+
+         </section>   
+
+         <!--Seccion nueva OFERTAS-->
+         <section class="oferts container">
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/AmigurEjem.jpg" alt="Amigurumi Premium">
+                <h3>Oferta</h3>
+                <p>Amigurumi Premium</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/oferta2.jpg" alt="Patron de Tejido">
+                <h3>Oferta</h3>
+                <p>Patrones Disponibles</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/oferta3.jpg" alt="">
+                <h3>Oferta</h3>
+                <p>Remate en gorros</p>
+            </div>
+            <div class="ofert-1">
+                <!--f2.png-->
+                <img src="./Assets/oferta4.jpg" alt="">
+                <h3>Oferta</h3>
+                <p>Kit de tejido</p>
+            </div>
+         </section>
+
+         <!--Contenido principal
+                Productos para agregar al carrito
+            -->
+
+         <main class="products container" id="lista-1">
+            <h2>Productos destacados</h2>
+            <!--Lista con todos los productos-->
+            <div class="product-content">
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/SueterEjem.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Suéter manga ancha</h3>
+                        <p class="precio">$750.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/cuellos.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Cuellos tejidos</h3>
+                        <p class="precio">$350.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/GorroBuho.png" alt="">
+                    <div class="product-txt">
+                        <h3>Gorro de Búho</h3>
+                        <p class="precio">$300.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/bolsas.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Bolsas Pequeñas desde</h3>
+                        <p class="precio">$250.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/borregos.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Borregos Miniatura</h3>
+                        <p class="precio">$200.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/pollo.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Pollo miniatura</h3>
+                        <p class="precio">$200.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/virgen.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>virgen pequña</h3>
+                        <p class="precio">$400.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <!--pr1.png-->
+                    <img src="./Assets/sueter2.jpg" alt="">
+                    <div class="product-txt">
+                        <h3>Suéter Personalizado</h3>
+                        <p class="precio">$800.00</p>
+                        <!--Data id debe ser diferente-->
+                        <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar</a>
+                    </div>
+                </div>
+
+            </div>
+         </main>
+
+         <!--Seccion Nueva-->
+
+         <section class="service">
+            <div class="service-1">
+                <!--1.png-->
+                <img class="store" src="./Assets/AmigurEjem.jpg" alt="">
+            </div>
+            <div class="service-2">
+                <!--1.png-->
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/uKQs7xuF028?si=wz8Fpdca2-w88G-j&amp;start=14" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="service-3">
+                <!--1.png-->
+                <img class="store" src="./Assets/SueterEjem.jpg" alt="">
+            </div>
+          
+         </section> <!---->
+
+         <!--Seccion nueva-->
+         <section class="contact container">
+            <form>  
+                <input type="email" placeholder="correo">
+                <input type="submit" class="btn-3">
+            </form>
+
+         </section>
+
+         <!--Seccion nueva-->
+         <footer class="footer">
+            <div class="footer-content container">
+                <div class="link">
+                    <a name="enterprise"></a>
+                    <h3 align='center' name="enterprise">HANOI</h3>
+                    <p align='center'>
+                        HANOI™ ES UNA COMPAÑIA CON SEDE EN MEXICO, REPRECENTACION LEGAL N°12555 COL ROMA CALLE BUENOS AIRES 15430, TODOS LOS DERECHOS RESERVADOS©
+                    </p>
+                </div>
+            </div>
+         </footer>
+
+        <!--Vincular a JS-->
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
