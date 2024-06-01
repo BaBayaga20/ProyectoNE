@@ -67,8 +67,13 @@ function vaciarCarrito(){
     }
     return false;
 
+
+}
+
+
 function mostrarToast() {
     // Crea un elemento div para el toast
+    console.log("Working")
     const toast = document.createElement("div");
     toast.classList.add("toast");
     toast.textContent = "¡Gracias por su preferencia!";
@@ -80,5 +85,4 @@ function mostrarToast() {
     setTimeout(() => {
       document.body.removeChild(toast);
     }, 3000);
-}
 }
