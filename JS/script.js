@@ -66,4 +66,19 @@ function vaciarCarrito(){
         lista.removeChild(lista.firstChild);
     }
     return false;
+
+function mostrarToast() {
+    // Crea un elemento div para el toast
+    const toast = document.createElement("div");
+    toast.classList.add("toast");
+    toast.textContent = "¡Gracias por su preferencia!";
+  
+    // Agrega el toast al cuerpo del documento
+    document.body.appendChild(toast);
+  
+    // Después de 3 segundos, elimina el toast
+    setTimeout(() => {
+      document.body.removeChild(toast);
+    }, 3000);
+}
 }
